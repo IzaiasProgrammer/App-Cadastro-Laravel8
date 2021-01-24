@@ -40,7 +40,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputPath": "../../../../public/assets/angular",
+              "outputPath": "/opt/lampp/htdocs/app-cadastro-laravel8/public/assets/angular",
               "deployUrl": "/assets/angular",
               "optimization": true,
               "outputHashing": "all",
