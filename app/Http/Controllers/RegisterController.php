@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Register;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Request\StoreUpdateRegisterRequest;
 
 class RegisterController extends Controller
 {
@@ -33,7 +34,7 @@ class RegisterController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreUpdateRegisterRequest $request)
     {
         //
     }
@@ -67,7 +68,7 @@ class RegisterController extends Controller
      * @param  \App\Models\Register  $register
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Register $register)
+    public function update(StoreUpdateRegisterRequest $request, Register $register)
     {
         //
     }
