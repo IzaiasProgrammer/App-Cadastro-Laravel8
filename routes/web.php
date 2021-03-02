@@ -1,6 +1,7 @@
 <?php
 
-use app\Http\Controllers\AngularController;
+// use app\Http\Controllers\AngularController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::any('/{any}', [AngularController::class, 'index'])->where('any', '^(?!api).*$');
+// Route::any('/{any}', [AngularController::class, 'index'])->where('any', '^(?!api).*$');
+
+// Route::any('/angular', [AngularController::class, 'index'])->where('any', '^(?!api).*$');
+
+Route::resource('register', RegisterController::class);
